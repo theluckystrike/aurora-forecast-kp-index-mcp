@@ -1,0 +1,6 @@
+[
+  ["kp_forecast", {}],
+  ["aurora_tonight", {"location": "Fairbanks, Alaska"}],
+  ["aurora_now", {"location": "Tromso"}],
+  ["space_weather_alerts", {"hours": 48}]
+]

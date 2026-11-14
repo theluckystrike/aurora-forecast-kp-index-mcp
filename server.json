@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.theluckystrike/aurora-forecast-kp-index-mcp",
+  "title": "Aurora Forecast and Kp Index MCP",
+  "description": "Aurora forecast and Kp index from NOAA SWPC: northern lights chance tonight, OVATION, alerts.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/theluckystrike/aurora-forecast-kp-index-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aurora-forecast-kp-index-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

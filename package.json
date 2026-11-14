@@ -1,0 +1,59 @@
+{
+  "name": "aurora-forecast-kp-index-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the aurora forecast and Kp index: northern lights chance tonight for any place hour by hour, live NOAA OVATION aurora probability, the planetary Kp index forecast and NOAA SWPC space weather alerts. No API key.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/aurora-forecast-kp-index-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/aurora-forecast-kp-index-mcp"
+  },
+  "homepage": "https://www.mcpstamp.com/servers/",
+  "bin": {
+    "aurora-forecast-kp-index-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "start": "node dist/stdio.js",
+    "deploy": "npx wrangler@4 deploy",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "aurora",
+    "aurora-forecast",
+    "northern-lights",
+    "northern-lights-forecast",
+    "kp-index",
+    "kp-index-forecast",
+    "space-weather",
+    "geomagnetic-storm",
+    "noaa",
+    "swpc",
+    "ovation",
+    "cloudflare-workers"
+  ]
+}
